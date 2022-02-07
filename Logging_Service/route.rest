@@ -1,0 +1,30 @@
+GET http://localhost:3005/logger
+
+###
+
+GET http://localhost:3005/logger/serviceName/RSVP_Service
+
+###
+
+GET http://localhost:3005/logger/requestID/321654987
+
+###
+
+GET http://localhost:3005/logger/responseID/987654321
+
+###
+
+GET http://localhost:3005/logger/timeStamp/Dec-5-2020
+
+###
+
+POST http://localhost:3005/logger
+Content-Type: application/json
+
+{
+    "serviceName": "Venue_Service",
+    "loggingRoute": "/api/venues",
+    "requestID": "321654987",
+    "responseID": "456123789",
+    "statusMessage": "success"
+}

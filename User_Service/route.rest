@@ -1,0 +1,28 @@
+GET http://localhost:3002/api/users
+
+###
+
+GET http://localhost:3002/api/users/5f7cc2b511dd9242d31966b0
+
+###
+
+PATCH http://localhost:3002/api/users/5f839984162f576bf0ab1dee
+Content-Type: application/json
+
+{
+    "rsvpVenue": "CrustyCentrifuge"
+}
+
+###
+
+POST http://localhost:3002/api/users
+Content-Type: application/json
+
+{
+    "username": "Frank",
+    "password": "kittykittymeowmeow"
+}
+
+###
+
+DELETE http://localhost:3002/api/users/5f7cc2b511dd9242d31966b0

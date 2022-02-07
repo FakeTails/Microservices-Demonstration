@@ -1,0 +1,49 @@
+version: "3"
+services:
+  web-server:
+    build: ./Web_Server
+    volumes:
+      - "./Web_Server:/usr/src/app"
+    ports:
+      - "3000:3000"
+    network_mode: host
+
+  api-gateway:
+    build: ./API_Gateway
+    volumes:
+      - "./API_Gateway:/usr/src/app"
+    ports:
+      - "3001:3001"
+    network_mode: host
+
+  user-service:    
+    build: ./User_Service
+    volumes:
+      - "./User_Service:/usr/src/app"
+    ports:
+      - "3002:3002"
+    network_mode: host
+
+  venue-service:
+    build: ./Venue_Service
+    volumes:
+      - "./Venue_Service:/usr/src/app"
+    ports:
+      - "3003:3003"
+    network_mode: host
+
+  rsvp-service:
+    build: ./RSVP_Service
+    volumes:
+      - "./RSVP_Service:/usr/src/app"
+    ports:
+      - "3004:3004"
+    network_mode: host
+
+  logging-service:
+    build: ./Logging_Service
+    volumes:
+      - "./Logging_Service:/usr/src/app"
+    ports:
+      - "3005:3005"
+    network_mode: host

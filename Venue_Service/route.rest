@@ -1,0 +1,29 @@
+GET http://localhost:3003/api/venues
+
+###
+
+GET http://localhost:3003/api/venues/SewerSanctuary
+
+###
+
+PATCH http://localhost:3003/api/venues/5fb54f2411b59173fd0d95ca
+Content-Type: application/json
+
+{
+    "numAvailableSeats": "297"
+}
+
+###
+
+POST http://localhost:3003/api/venues
+Content-Type: application/json
+
+{
+    "name": "CrustyCentrifuge",
+    "occupancy": "300",
+    "numAvailableSeats": "75"
+}
+
+###
+
+DELETE http://localhost:3003/api/venues/5f97110878533d324b52478f
