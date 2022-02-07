@@ -7,6 +7,6 @@ A project for school created to demonstrate the best way to communicate informat
 
 ### Diagram of the web microservices reliances:
 The front facing web service goes through the API to communicate with any other service, the API goes through the logger for logging the current actions taken by the user, From the logger it goes to the destination and then back through the logger so that once again the information is captured. All information was stored in a MongoDB cloud storage when in use.
-![diagram](https://FakeTails/Microservices-Demonstration/blob/main/README_images/SEM_Diagram.png?raw=true)
+![diagram](https://github.com/FakeTails/Microservices-Demonstration/blob/main/README_images/SEM_Diagram.png?raw=true)
 
 </br> Designed and developed by Joshua LaRocca, Alexander Bachmann, and Julie Thompson.
